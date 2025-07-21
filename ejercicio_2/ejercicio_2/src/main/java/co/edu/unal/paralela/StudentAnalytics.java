@@ -53,7 +53,7 @@ public final class StudentAnalytics {
                 .filter(Student::checkIsCurrent)
                 .mapToDouble(Student::getAge)
                 .average()
-                .orElse(0.0);
+                .getAsDouble();
     }
 
     /**

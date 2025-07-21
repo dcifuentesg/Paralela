@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.edu.unal.paralela.StudentAnalyticsTest" time="4.452" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="co.edu.unal.paralela.StudentAnalyticsTest" time="4.904" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -56,10 +56,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase name="testAverageAgeOfEnrolledStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.711"/>
-  <testcase name="testAverageAgeOfEnrolledStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.683"/>
-  <testcase name="testMostCommonFirstNameOfInactiveStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.741"/>
-  <testcase name="testMostCommonFirstNameOfInactiveStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="1.853"/>
-  <testcase name="testCountNumberOfFailedStudentsOlderThan20" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="-0.168"/>
-  <testcase name="testCountNumberOfFailedStudentsOlderThan20Perf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.632"/>
+  <testcase name="testAverageAgeOfEnrolledStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.644"/>
+  <testcase name="testAverageAgeOfEnrolledStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.664"/>
+  <testcase name="testMostCommonFirstNameOfInactiveStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.766"/>
+  <testcase name="testMostCommonFirstNameOfInactiveStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="1.907"/>
+  <testcase name="testCountNumberOfFailedStudentsOlderThan20" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.483"/>
+  <testcase name="testCountNumberOfFailedStudentsOlderThan20Perf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.44"/>
 </testsuite>
