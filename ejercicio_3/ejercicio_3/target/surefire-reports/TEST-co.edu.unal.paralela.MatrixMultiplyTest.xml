@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.edu.unal.paralela.MatrixMultiplyTest" time="68.302" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="co.edu.unal.paralela.MatrixMultiplyTest" time="59.694" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -56,6 +56,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase name="testPar512_x_512" classname="co.edu.unal.paralela.MatrixMultiplyTest" time="11.201"/>
-  <testcase name="testPar768_x_768" classname="co.edu.unal.paralela.MatrixMultiplyTest" time="57.101"/>
+  <testcase name="testPar512_x_512" classname="co.edu.unal.paralela.MatrixMultiplyTest" time="10.499"/>
+  <testcase name="testPar768_x_768" classname="co.edu.unal.paralela.MatrixMultiplyTest" time="49.195"/>
 </testsuite>

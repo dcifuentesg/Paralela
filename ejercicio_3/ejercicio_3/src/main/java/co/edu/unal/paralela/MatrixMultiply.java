@@ -32,6 +32,23 @@ public final class MatrixMultiply {
     }
 
     /**
+     * Transposes a given NxN matrix.
+     *
+     * @param matrix The matrix to transpose.
+     * @param N The size of the matrix.
+     * @return The transposed matrix.
+     */
+    private static double[][] transposeMatrix(final double[][] matrix, final int N) {
+        final double[][] transposed = new double[N][N];
+        forall(0, N - 1, (i) -> {
+            for (int j = 0; j < N; j++) {
+                transposed[i][j] = matrix[j][i];
+            }
+        });
+        return transposed;
+    }
+
+    /**
      * Realiza una multiplicación de matrices bidimensionales (A x B = C) de forma paralela.
      *
      * @param A Una matriz de entrada con dimensiones NxN
@@ -42,15 +59,18 @@ public final class MatrixMultiply {
     public static void parMatrixMultiply(final double[][] A, final double[][] B,
             final double[][] C, final int N) {
         /*
-         * Paralelización implementada usando forall para distribuir las filas
-         * entre múltiples cores. Cada core procesa filas completas de la matriz.
+         * Paralelización implementada usando una matriz transpuesta para mejorar
+         * la eficiencia del cache.
          */
+        final double[][] B_transposed = transposeMatrix(B, N);
+
         forall(0, N - 1, (i) -> {
             for (int j = 0; j < N; j++) {
-                C[i][j] = 0.0;
+                double sum = 0.0;
                 for (int k = 0; k < N; k++) {
-                    C[i][j] += A[i][k] * B[k][j];
+                    sum += A[i][k] * B_transposed[j][k];
                 }
+                C[i][j] = sum;
             }
         });
     }
