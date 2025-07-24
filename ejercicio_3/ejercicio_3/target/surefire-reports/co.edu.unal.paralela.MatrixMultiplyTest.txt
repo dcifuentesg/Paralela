@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: co.edu.unal.paralela.MatrixMultiplyTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.75 sec - in co.edu.unal.paralela.MatrixMultiplyTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.775 sec <<< FAILURE! - in co.edu.unal.paralela.MatrixMultiplyTest
+testPar512_x_512(co.edu.unal.paralela.MatrixMultiplyTest)  Time elapsed: 15.998 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: It was expected that the parallel implementation would run at least 2.400000x faster, but it only achieved 0.911548x speedup
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at co.edu.unal.paralela.MatrixMultiplyTest.testPar512_x_512(MatrixMultiplyTest.java:116)
+

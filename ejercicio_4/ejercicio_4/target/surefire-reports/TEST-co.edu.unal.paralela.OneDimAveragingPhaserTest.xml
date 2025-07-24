@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.edu.unal.paralela.MatrixMultiplyTest" time="55.719" tests="2" errors="0" skipped="0" failures="1">
+<testsuite name="co.edu.unal.paralela.OneDimAveragingPhaserTest" time="205.66" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="21.0.7+6-Ubuntu-0ubuntu124.04"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/Users/alejo/OneDrive/Documents/Paralela/ejercicio_3/ejercicio_3"/>
+    <property name="maven.multiModuleProjectDirectory" value="/mnt/c/Users/alejo/OneDrive/Documents/Paralela/ejercicio_4/ejercicio_4"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/mnt/c/Users/alejo/OneDrive/Documents/Paralela/ejercicio_3/ejercicio_3"/>
+    <property name="user.dir" value="/mnt/c/Users/alejo/OneDrive/Documents/Paralela/ejercicio_4/ejercicio_4"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="21.0.7+6-Ubuntu-0ubuntu124.04"/>
     <property name="os.arch" value="amd64"/>
@@ -56,12 +56,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase name="testPar512_x_512" classname="co.edu.unal.paralela.MatrixMultiplyTest" time="15.998">
-    <failure message="It was expected that the parallel implementation would run at least 2.400000x faster, but it only achieved 0.911548x speedup" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: It was expected that the parallel implementation would run at least 2.400000x faster, but it only achieved 0.911548x speedup
+  <testcase name="testFuzzyBarrier" classname="co.edu.unal.paralela.OneDimAveragingPhaserTest" time="205.66">
+    <failure message="It was expected that the fuzzy barrier parallel implementation would run 1.100000x faster than the barrier implementation, but it only achieved 0.966752x speedup" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: It was expected that the fuzzy barrier parallel implementation would run 1.100000x faster than the barrier implementation, but it only achieved 0.966752x speedup
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at co.edu.unal.paralela.MatrixMultiplyTest.testPar512_x_512(MatrixMultiplyTest.java:116)
+	at co.edu.unal.paralela.OneDimAveragingPhaserTest.testFuzzyBarrier(OneDimAveragingPhaserTest.java:122)
 </failure>
   </testcase>
-  <testcase name="testPar768_x_768" classname="co.edu.unal.paralela.MatrixMultiplyTest" time="39.721"/>
 </testsuite>
